@@ -1,0 +1,151 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <title>Bit's Dé Cipher | Home</title>
+  </head>
+  <body>
+    <div class="header">Bit's&nbsp;<span>Dé</span>&nbsp;Cipher</div>
+    <div class="nav-wrapper">
+      <div class="nav-container">
+        <button type="button" class="btn" id="questions">Questions</button>
+        <button type="button" class="btn" id="rules">Rules</button>
+        <button type="button" class="btn" id="sign-in">Sign In</button>
+      </div>
+      <div class="nav-container-right">
+        <button type="button" class="btn" id="leaderboard">Leaderboard</button>
+      </div>
+    </div>
+    <hr class="ruler" />
+    <div class="questions">
+      <div class="questions-container">
+        <div class="question-format">
+          <div class="question-image">
+            <img src="" alt="" class="ques-img" />
+          </div>
+          <div class="question-text"></div>
+        </div>
+        <div class="answer-format">
+          <input
+            type="text"
+            name="answer"
+            id="answer"
+            class="answer"
+            placeholder="Answer here, text is not case sensitive... "
+          />
+          <button type="button" class="btn" id="submit-answer">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="rules hidden"></div>
+    <div class="sign-in hidden">
+      <div class="signup-form">
+        <div class="form-heading">Register</div>
+        <form>
+          <input
+            type="text"
+            name="rollNumber"
+            id="rollNumber"
+            class="rollNumber"
+            placeholder="Roll Number"
+            oninput="console.log(this.value);if (this.value.length !== 8 || typeof this.value.slice(2, 4) !== 'string') {
+              this.classList.remove('valid');
+              this.classList.add('invalid');
+            } else {
+              this.classList.remove('invalid');
+              this.classList.add('valid');
+            }"
+            required
+          />
+          <button type="button" class="submitBtn">Register</button>
+        </form>
+        <div class="form-disclaimer">
+          Any new user has to <b>REGISTER</b> as soon as he attempts the
+          contest.<br />
+          Once Registered, the user will be sent with a unique passkey at their
+          respective
+          <b>College Email Id</b>.<br />
+          Contact Us in case of any issue.<br /><br />
+          <button type="button" class="admin btn">Admin</button>
+        </div>
+      </div>
+    </div>
+    <div class="additional-controls hidden"></div>
+    <div class="leaderboard hidden"></div>
+    <script src="../static/js/index.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <title>Bit's Dé Cipher | Home</title>
+  </head>
+  <body>
+    <div class="header">Bit's&nbsp;<span>Dé</span>&nbsp;Cipher</div>
+    <div class="nav-wrapper">
+      <div class="nav-container">
+        <button type="button" class="btn" id="questions">Questions</button>
+        <button type="button" class="btn" id="rules">Rules</button>
+        <button type="button" class="btn" id="sign-in">Sign In</button>
+      </div>
+      <div class="nav-container-right">
+        <button type="button" class="btn" id="leaderboard">Leaderboard</button>
+      </div>
+    </div>
+    <hr class="ruler" />
+    <div class="questions">
+      <div class="questions-container">
+        <div class="question-format">
+          <div class="question-image">
+            <img src="" alt="" class="ques-img" />
+          </div>
+          <div class="question-text"></div>
+        </div>
+        <div class="answer-format">
+          <input
+            type="text"
+            name="answer"
+            id="answer"
+            class="answer"
+            placeholder="Answer here, text is not case sensitive..."
+          />
+          <button type="button" class="btn" id="submit-answer">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="rules hidden"></div>
+    <div class="sign-in hidden">
+      <div class="signup-form">
+        <div class="form-heading">Register</div>
+        <form>
+          <input
+            type="text"
+            name="rollNumber"
+            id="rollNumber"
+            class="rollNumber"
+            placeholder="Roll Number"
+            required
+          />
+          <button type="button" class="submitBtn">Register</button>
+        </form>
+        <div class="form-disclaimer">
+          Any new user has to <b>REGISTER</b> as soon as he attempts the
+          contest.<br />
+          Once Registered, the user will receive a unique passkey at their
+          respective
+          <b>College Email Id</b>.<br />
+          Contact Us in case of any issue.<br /><br />
+          <button type="button" class="admin btn">Admin</button>
+        </div>
+      </div>
+    </div>
+    <div class="leaderboard hidden"></div>
+    <script src="../static/js/index.js"></script>
+  </body>
+</html>

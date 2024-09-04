@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen:wght@400;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.ruler {
+  width: 100%;
+  border: 1px solid black;
+}
+.btn {
+  font-family: "Poppins", sans-serif;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  padding: 5px 10px;
+  font-size: 15px;
+  width: max-content;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.header {
+  width: 100%;
+  font-family: "Qwitcher Grypen", sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  text-align: center;
+}
+.header span {
+  color: red;
+}
+
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-container-right {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-container .btn,
+.nav-container-right .btn {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  color: black;
+  background-color: white;
+  margin: 0px 50px;
+  font-size: 20px;
+  width: max-content;
+  text-transform: uppercase;
+}
+.nav-container .btn:hover,
+.nav-container-right .btn:hover {
+  cursor: pointer;
+}
+.questions,
+.rules,
+.sign-in,
+.leaderboard {
+  height: calc(100svh - 174px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #fff #fff;
+  overflow-x: hidden;
+}
+.questions-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.questions-format {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.answer-format {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.question-image {
+  width: 100%;
+  height: auto;
+}
+.question-image img {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.question-image img:hover {
+  cursor: pointer;
+}
+.question-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.answer {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+.signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.form-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: absolute;
+  z-index: 2;
+  top: 200px;
+  padding: 0px 10px;
+  background-color: white;
+  text-transform: uppercase;
+}
+.signup-form form {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  border: 1px solid black;
+  padding: 50px;
+  margin-top: 50px;
+}
+.signup-form input {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+.signup-form input:focus {
+  outline: none;
+}
+.signup-form button {
+  width: max-content;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+.signup-form button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.form-disclaimer {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+.error-message {
+  color: red;
+  display: none;
+}
+.signup-form input.valid {
+  border: 1px solid green;
+}
+.signup-form input.invalid {
+  border: 1px solid red;
+}
+@media screen and (max-width: 843px) {
+  .nav-container .btn,
+  .nav-container-right .btn {
+    margin: 0px 25px;
+  }
+  .questions-container {
+    gap: 25px;
+  }
+  .answer-format {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 643px) {
+  .nav-container .btn,
+  .nav-container-right .btn {
+    margin: 0px 10px;
+  }
+  .questions-container {
+    gap: 10px;
+  }
+  .answer-format {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 523px) {
+  .header {
+    font-size: 36px;
+  }
+  .nav-container .btn,
+  .nav-container-right .btn {
+    margin: 0px 5px;
+    font-size: 15px;
+  }
+  .questions-container {
+    gap: 25px;
+  }
+  .question-text {
+    font-size: 15px;
+  }
+  .answer-format {
+    width: 80%;
+  }
+  .btn {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 396px) {
+  .header {
+    font-size: 24px;
+  }
+  .nav-container .btn,
+  .nav-container-right .btn {
+    margin: 0px 2px;
+    font-size: 12px;
+  }
+  .questions-container {
+    gap: 2px;
+  }
+  .question-text {
+    font-size: 12px;
+  }
+  .answer-format {
+    width: 60%;
+  }
+  .btn {
+    font-size: 12px;
+  }
+}
+
+.hidden {
+  display: none;
+}
